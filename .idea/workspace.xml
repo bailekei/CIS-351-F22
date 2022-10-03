@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="791d1e09-dd4b-4959-87f3-fbfb4ce89a84" name="Default Changelist" comment="" />
+    <list default="true" id="791d1e09-dd4b-4959-87f3-fbfb4ce89a84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/DLUnit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/JLS.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/SignedFullAdder_16Bit.jls" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +52,8 @@
       <workItem from="1663002082917" duration="6000" />
       <workItem from="1663098408988" duration="13000" />
       <workItem from="1663347874728" duration="11000" />
+      <workItem from="1664743292110" duration="21000" />
+      <workItem from="1664746933165" duration="10000" />
     </task>
     <servers />
   </component>
@@ -58,7 +65,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
