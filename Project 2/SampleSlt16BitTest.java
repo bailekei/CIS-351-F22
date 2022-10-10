@@ -7,12 +7,16 @@ import static edu.gvsu.dlunit.DLUnit.readPin;
 /**
  * Sample test cases for 16-bit set less than circuit
  * <p/>
- * IMPORTANT:  These test cases do *not* thoroughly test the circuit.  You need to
+ * IMPORTANT: These test cases do *not* thoroughly test the circuit. You need to
  * re-name this class and add more tests!
  * <p/>
  * Created by kurmasz on 8/8/16.
  */
 public class SampleSlt16BitTest {
+
+    public static final long testIntegers[] = { -32768, -32767, 0, 1, 2, 13, 127, 128, 129, 0x5555, 32766, 32767 };
+
+    public static final long testPosIntegers[] = { 0, 1, 2, 13, 127, 128, 129, 0x5555, 32766, 32767, 65534, 65535 };
 
     public void verify(long a, long b, boolean signed) {
 
@@ -26,7 +30,6 @@ public class SampleSlt16BitTest {
 
         setPin("Signed", signed);
         run();
-
 
         ////////////////////////////////////////
         //
@@ -85,5 +88,23 @@ public class SampleSlt16BitTest {
     @Test
     public void one_zero_unsigned() {
         verify(1, 0, false);
+    }
+
+    @Test
+    public void testAll_signed() {
+        for (long a : testIntegers) {
+            for (long b : testIntegers) {
+                verify(a, b, true);
+            }
+        }
+    }
+
+    @Test
+    public void testAll_unsigned() {
+        for (long a : testPosIntegers) {
+            for (long b : testPosIntegers) {
+                verify(a, b, false);
+            }
+        }
     }
 }
