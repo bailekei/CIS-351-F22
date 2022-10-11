@@ -86,8 +86,32 @@ public class AssemblyIntroTest {
     }
 
     @Test
+    public void posNeg_pos_neg_true() {
+        run("posNeg", 1, -1, 1);
+        Assert.assertEquals(0, get(v0));
+    }
+
+    @Test
     public void posNeg_neg_pos_false() {
         run("posNeg", 1, -1, 0);
         Assert.assertEquals(1, get(v0));
+    }
+
+    @Test
+    public void posNeg_neg_pos_true() {
+        run("posNeg", 1, -1, 1);
+        Assert.assertEquals(0, get(v0));
+    }
+
+    @Test
+    public void posNeg_pos_pos_false() {
+        run("posNeg", 1, 1, 0);
+        Assert.assertEquals(0, get(v0));
+    }
+
+    @Test
+    public void posNeg_pos_pos_true() {
+        run("posNeg", 1, 1, 1);
+        Assert.assertEquals(0, get(v0));
     }
 }
