@@ -13,3 +13,7 @@ Run test on JLS files:
 javac -cp DLUnit.jar TestName.java
 java -jar DLUnit.jar filename.jls TestName.class
 ```
+Run Mars:
+```
+java -jar Mars4_5.jar
+```
