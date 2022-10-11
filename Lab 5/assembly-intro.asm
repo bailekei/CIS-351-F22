@@ -29,9 +29,15 @@
 # Lines below here are where you will write your functions.
 #
 monkeyTrouble:
+	xor $v0, $a0, $a1
+	not $v0, $v0
+	andi $v0, $v0, 1
 	jr $ra
 
 sleepIn:
+	not $a0, $a0
+	andi $a0, $a0, 1
+	or $v0, $a0, $a1
 	jr $ra
 
 posNeg:
