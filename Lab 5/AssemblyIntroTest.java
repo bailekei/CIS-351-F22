@@ -78,4 +78,16 @@ public class AssemblyIntroTest {
         run("posNeg", -1, -3, 1);
         Assert.assertEquals(1, get(v0));
     }
+
+    @Test
+    public void posNeg_pos_neg_false() {
+        run("posNeg", 1, -1, 0);
+        Assert.assertEquals(1, get(v0));
+    }
+
+    @Test
+    public void posNeg_neg_pos_false() {
+        run("posNeg", 1, -1, 0);
+        Assert.assertEquals(1, get(v0));
+    }
 }
