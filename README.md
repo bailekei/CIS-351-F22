@@ -17,3 +17,8 @@ Run Mars:
 ```
 java -jar Mars4_5.jar
 ```
+Run test on AMS files:
+```
+javac -cp munit.jar Test.java
+java -jar munit.jar Sample.asm Test.class
+```
