@@ -35,10 +35,26 @@ monkeyTrouble:
 	jr $ra
 
 sleepIn:
-	not $a0, $a0
-	andi $a0, $a0, 1
-	or $v0, $a0, $a1
+	not $t0, $a0
+	andi $t0, $t0, 1
+	or $v0, $t0, $a1
 	jr $ra
 
 posNeg:
+	slt $a0, $zero, $a0
+	slt $a1, $zero, $a1
+	not $t0, $a0
+	andi $t0, $t0, 1
+	not $t1, $a1
+	andi $t1, $t1, 1
+	not $t2, $a2
+	andi $t2, $t2, 1
+	and $t3, $t0, $t1
+	and $t3, $t3, $a2
+	and $t4, $t0, $a1
+	and $t4, $t4, $t2
+	and $t5, $a0, $t1
+	and $t5, $t5, $t2
+	or $t6, $t3, $t4
+	or $v0, $t6, $t5
 	jr $ra

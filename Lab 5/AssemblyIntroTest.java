@@ -22,11 +22,13 @@ public class AssemblyIntroTest {
         run("monkeyTrouble", 1, 0);
         Assert.assertEquals(0, get(v0));
     }
+
     @Test
     public void monkeyTroube_bSmiling() {
         run("monkeyTrouble", 0, 1);
         Assert.assertEquals(0, get(v0));
     }
+
     @Test
     public void monkeyTroube_bothSmiling() {
         run("monkeyTrouble", 1, 1);
@@ -67,9 +69,10 @@ public class AssemblyIntroTest {
      * Test posNeg
      *
      *****************************************************************/
+
     @Test
     public void posNeg_neg_neg_false() {
-        run("posNeg", -1, -3, 0);
+        run("posNeg", -4, -5, 0);
         Assert.assertEquals(0, get(v0));
     }
 
@@ -87,25 +90,25 @@ public class AssemblyIntroTest {
 
     @Test
     public void posNeg_pos_neg_true() {
-        run("posNeg", 1, -1, 1);
+        run("posNeg", 5, -5, 1);
         Assert.assertEquals(0, get(v0));
     }
 
     @Test
     public void posNeg_neg_pos_false() {
-        run("posNeg", 1, -1, 0);
+        run("posNeg", -6, 6, 0);
         Assert.assertEquals(1, get(v0));
     }
 
     @Test
     public void posNeg_neg_pos_true() {
-        run("posNeg", 1, -1, 1);
+        run("posNeg", -5, 6, 1);
         Assert.assertEquals(0, get(v0));
     }
 
     @Test
     public void posNeg_pos_pos_false() {
-        run("posNeg", 1, 1, 0);
+        run("posNeg", 1, 2, 0);
         Assert.assertEquals(0, get(v0));
     }
 
@@ -114,4 +117,5 @@ public class AssemblyIntroTest {
         run("posNeg", 1, 1, 1);
         Assert.assertEquals(0, get(v0));
     }
+
 }
