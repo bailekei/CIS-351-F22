@@ -46,7 +46,21 @@ is_ten:
 	
 
 intMax:
+	slt $t0, $a0, $a1
+	bnez $t0, else
+	add $v0, $zero, $a0 
+	j L2
+else:
+	add $v0, $zero, $a1
+L2:
+	slt $t1, $v0, $a2
+	bnez $t1, else2
+	add $v0, $zero, $v0
 	jr $ra
+else2:
+	add $v0, $zero, $a2
+	jr $ra
+	
 
 close10:
 	jr $ra
