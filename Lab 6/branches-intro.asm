@@ -82,5 +82,43 @@ else4:
 	jr $ra
 	
 	
+	
+	#
+	#if $a0 < 3 or $a1 < 3
+	#  return 0
+	#
+	#if 7 < $a0 or 7 < $a1
+	#  return 2
+	#
+	#return 1
+	#
+	
 dateFashion:
+	addi $t4, $zero, 7
+	
+	slti $t0, $a0, 3
+	slti $t1, $a0, 3
+	slt $t2, $t4, $a0
+	slt $t3, $t4, $a0
+	
+	or $t5, $t0, $t1
+	or $t6, $t2, $t3
+	bnez $t5, else5
+	bnez $t6, else6
+	addi $v0, $zero, 1
 	jr $ra
+else5:
+	addi $v0, $zero, 0
+	jr $ra
+else6:	
+	addi $v0, $zero, 2
+	jr $ra
+
+
+
+
+
+
+
+
+
