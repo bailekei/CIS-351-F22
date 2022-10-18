@@ -33,7 +33,7 @@ makes10:
 	beq $s0, 10, is_ten
 	
 	is_ten:
-		andi $t0, 1, 1
+		andi $t0, 1
 		jr $ra
 
 intMax:
