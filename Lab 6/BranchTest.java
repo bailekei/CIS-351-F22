@@ -161,12 +161,12 @@ public class BranchTest {
     @Test
     public void close10_a11b10() {
         run("close10", 11, 10);
-        Assert.assertEquals(8, get(v0));
+        Assert.assertEquals(10, get(v0));
     }
     @Test
     public void close10_a5b21() {
         run("close10", 5, 21);
-        Assert.assertEquals(8, get(v0));
+        Assert.assertEquals(5, get(v0));
     }
     @Test
     public void close10_a0b20() {

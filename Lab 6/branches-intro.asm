@@ -33,7 +33,7 @@ makes10:
 	add $s0, $a0, $a1
 	beq $s0, 10, is_ten
 	
-	andi $v0, $v0, 0
+	addi $v0, $zero, 0
 	jr $ra
 	
 is_ten:
@@ -63,7 +63,24 @@ else2:
 	
 
 close10:
+	subi $t4, $a0, 10
+	subi $t5, $a1, 10
+	abs $t0, $t4
+	abs $t1, $t5
+	
+	slt $t2, $t0, $t1
+	slt $t3, $t1, $t0
+	bnez $t2, else3
+	bnez $t3, else4
+	addi $v0, $zero, 0
 	jr $ra
+else3:
+	add $v0, $zero, $a0
+	jr $ra
+else4:
+	add $v0, $zero, $a1
+	jr $ra
+	
 	
 dateFashion:
 	jr $ra
