@@ -27,14 +27,23 @@
 makes10:
 # a==10 or b==10 or a+b==10
 	beq $a0, 10, is_ten
+	
 	beq $a1, 10, is_ten
 	
 	add $s0, $a0, $a1
 	beq $s0, 10, is_ten
 	
-	is_ten:
-		andi $t0, 1
-		jr $ra
+	andi $v0, $v0, 0
+	jr $ra
+	
+is_ten:
+	addi   $v0, $zero, 1
+	jr $ra
+	
+	
+	
+	
+	
 
 intMax:
 	jr $ra

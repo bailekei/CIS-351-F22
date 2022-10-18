@@ -17,34 +17,42 @@ public class BranchTest {
         run("makes10", 9, 10);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs9_bIs9() {
         run("makes10", 9, 9);
         Assert.assertEquals(0, get(v0));
     }
+    @Test
     public void makes10_aIs1_bIs9() {
         run("makes10", 1, 9);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs10_bIs1() {
         run("makes10", 10, 1);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs10_bI10() {
         run("makes10", 10, 10);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs8_bI2() {
         run("makes10", 8, 2);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs8_bI3() {
         run("makes10", 8, 3);
         Assert.assertEquals(0, get(v0));
     }
+    @Test
     public void makes10_aIs10_bI42() {
         run("makes10", 10, 42);
         Assert.assertEquals(1, get(v0));
     }
+    @Test
     public void makes10_aIs12_bIsNeg2() {
         run("makes10", 12, -2);
         Assert.assertEquals(1, get(v0));
