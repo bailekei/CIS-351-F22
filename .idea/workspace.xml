@@ -2,8 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="791d1e09-dd4b-4959-87f3-fbfb4ce89a84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 5/AssemblyIntroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 5/AssemblyIntroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 1/ComparatorTwoBitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 1/ComparatorTwoBitTestWeak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 1/ComparatorTwoBitTestWeak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 1/comparatorTwoBit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 1/comparatorTwoBitBroken.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/DLUnit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/FourAdder.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/FullAdder.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/HalfAdder.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/HalfAdderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/HalfAdderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/JLS.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/SampleUnsigned16BitAdderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/SampleUnsigned16BitAdderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 3/UnsignedFullAdder_16bit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/AssemblyIntroSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/AssemblyIntroSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/AssemblyIntroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/AssemblyIntroTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/Mars4_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/assembly-intro-sample.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/assembly-intro.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 5/munit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 6/BranchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 6/BranchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 6/Mars4_5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 6/branches-intro.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 6/munit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/CLA.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/LA.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/SampleSigned16BitAdderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/SampleSigned16BitAdderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/SignedFullAdder_16Bit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/SignedFullAdder_16bits.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/UnsignedFullAdder_16bit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/overflowCircuit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/DLUnit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/JLS.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/SampleSigned16BitAddSubtractTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/SampleSigned16BitAddSubtractTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/SampleSlt16BitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/SampleSlt16BitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/Slt_16bit.jls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 2/Subtractor_16bit.jls" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +99,7 @@
       <workItem from="1665447061156" duration="14000" />
       <workItem from="1665449023371" duration="13000" />
       <workItem from="1665454820880" duration="198000" />
+      <workItem from="1666143976807" duration="27000" />
     </task>
     <servers />
   </component>
