@@ -13,7 +13,7 @@ import static edu.gvsu.dlunit.DLUnit.*;
  * <p>
  * Created by kurmasz on 8/8/16.
  */
-public class Sample16BitALUTest {
+public class 16BitALUtest {
 
     public static class OpCodes {
         public static final int ADDU = 0;
