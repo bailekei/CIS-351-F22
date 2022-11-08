@@ -31,7 +31,7 @@ max:
 	add $t2, $t1, $zero # max = arr[0]
 	sw $t1, 0($t0)
 	
-	ja $ra
+	jr $ra
 	
 	loop:
 		beq $s0, $a1, exit
@@ -61,7 +61,7 @@ max:
 sum13:
 	addi $t0, $zero, 0 # sum = 0
 	addi $t1, $zero, 0 # i = 0
-	ja $ra
+	jr $ra
 	
 	while:
 		beq $t1, $a1, exit # i < num.length
