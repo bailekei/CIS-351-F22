@@ -15,7 +15,7 @@
 # ----------------------------------------------------------------------------
 # Return the largest value in array
 max: 
-	ja $ra
+	jr $ra
 	
 
 
@@ -35,4 +35,4 @@ max:
 #    return sum;
 # }
 sum13:
-	ja $ra
+	jr $ra
