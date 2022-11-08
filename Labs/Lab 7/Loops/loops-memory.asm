@@ -53,6 +53,7 @@ max:
 		j loop
 		
 	exit:
+		jr $ra
 		# leave loop
 
 
@@ -90,6 +91,3 @@ sum13:
 	if_13:
 		addi $t1, $t1, 2
 		j while
-	
-	exit:
-	

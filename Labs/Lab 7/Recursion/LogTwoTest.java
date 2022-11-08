@@ -28,6 +28,12 @@ public class LogTwoTest {
         Assert.assertEquals(-1, get(v0));
     }
 
+    @Test
+    public void log_two_two() {
+        run("log_two", 69);
+        Assert.assertEquals(6, get(v0));
+    }
+
     /******************************************************************
      *
      * Write many more tests!  * Test Edge Cases *
