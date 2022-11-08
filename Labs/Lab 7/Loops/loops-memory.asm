@@ -25,20 +25,33 @@
 #    return max;
 
 max: 
-	addi $s0, $zero, 0 #i = 1
+	addi $s0, $zero, 0 #i = 0
 	add $t0, $t0, $a0 # address of array
 	lw $t1, 0($t0) # t1 = array[0]
-	add $t2, $t1, $zero # max = arr[0]
+	add $t2, $t1, $zero # max/t2 = arr[0]
 	sw $t1, 0($t0)
+	
+	addi $s0, $zero, 1 # i = 0
+	j loop
+	add $v0, $zero, $t2 # v0 = max/t2
 	
 	jr $ra
 	
 	loop:
 		beq $s0, $a1, exit
-		slt $t3, $zero, $t2 # arr[i] > max
+		add $t0, $t0, $a0
+		lw $t1, 0($t0)
+		sgt $t3, $t1, $t2 # arr[i] > max
+		beq $t3, 1, set_max
+		sw $t1, 0($t0)
 		
 		addi $s0, $s0, 1
+		j loop
 	
+	set_max:
+		add $t2, $t1, $zero
+		j loop
+		
 	exit:
 		# leave loop
 
@@ -55,9 +68,9 @@ max:
 #            i++;
 #        }
 #    }
-#    
 #    return sum;
 # }
+
 sum13:
 	addi $t0, $zero, 0 # sum = 0
 	addi $t1, $zero, 0 # i = 0
