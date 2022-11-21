@@ -7,7 +7,7 @@
 	#jal log_two:
 
 	#addi $v0, $0, 10	
-	#syscall		
+	#sys-call		
 # if (x < 2)
 #    return 0;
 #  return 1 + logCalculator(x / 2);
