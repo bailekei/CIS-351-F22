@@ -7,8 +7,8 @@ val2:	.word 43
 	.text
 	.globl main
 main:	
-	addi $v0, $v0, 32767
-	addi $v0, $v0, 65538
+	addi $v0, $v0, 32767 # 7FFF
+	addi $v0, $v0, 65538 # 
 	lw $t0, val1		# load contents of memory location val1 into register t0
 	lw $t1, val2		# load contents of memory location val2 into register t1
 	
